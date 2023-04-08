@@ -26,7 +26,7 @@ class Kalman(): # 一维kalman滤波
 def main():
     np.random.seed(666)
     hight = np.random.normal(50,np.sqrt(5),100) # 随机生成50个数，均值为50，方差为5的随机数 ,用来分析一个房子高度不改变的高度
-    x_ini,p_ini,R  = 60 ,225 ,5 #标准差为5，初始方差为5
+    x_ini,p_ini,R  = 60 ,225 ,5 #方差为25(标准差为225)，初始标准差为5
     X_now = []
     P_now = []
     for i ,x in enumerate(hight):
